@@ -5,10 +5,10 @@ try{
     res.json({
         status:200,
         message:"get data has success"
-    })
+    });
 }catch(Error){
 console.error(error);
-returnres.status(500).send("Server err")
+return res.status(500).send("Server error")
 }
 });
 module.exports=router;
